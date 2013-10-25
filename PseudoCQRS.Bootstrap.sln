@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PseudoCQRS.Bootstrap", "PseudoCQRS.Bootstrap\PseudoCQRS.Bootstrap.csproj", "{0ACEF421-A704-4692-A5DB-0966D7F6071E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{39B62CB6-D9C9-453C-8489-A20164E3A043}"
+	ProjectSection(SolutionItems) = preProject
+		PseudoCQRS.Bootstrap.nuspec = PseudoCQRS.Bootstrap.nuspec
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0ACEF421-A704-4692-A5DB-0966D7F6071E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ACEF421-A704-4692-A5DB-0966D7F6071E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ACEF421-A704-4692-A5DB-0966D7F6071E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ACEF421-A704-4692-A5DB-0966D7F6071E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35
+	EndGlobalSection
+EndGlobal

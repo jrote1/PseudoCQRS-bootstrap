@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<id>PseudoCQRS.Bootstrap</id>
+		<version>1.0.1</version>
+		<title>Pseudo CQRS Bootstrap</title>
+		<authors>Adeel Mahmood</authors>
+		<owners />
+		<projectUrl>https://github.com/adeel41/PseudoCQRS-bootstrap</projectUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>A bootstrapper for CQRS Framework</description>
+		<dependencies>
+			<dependency id="PseudoCQRS.Mvc4" version="2.0.3" />
+			<dependency id="AutoMapper" version="3.0.0" />
+			<dependency id="CommonServiceLocator" version="1.0" />
+			<dependency id="Unity" version="2.1.505.2" />
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="PseudoCQRS.Bootstrap\bin\Release\PseudoCQRS.Bootstrap.dll" target="lib\net40\PseudoCQRS.dll" />
+		<file src="PseudoCQRS.Bootstrap\AutoMapperInitializer.cs.pp" target="src\Bootstrap\AutoMapperInitializer.cs.pp" />
+	</files>
+</package>
