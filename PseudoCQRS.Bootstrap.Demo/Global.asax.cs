@@ -27,7 +27,7 @@ namespace PseudoCQRS.Bootstrap.Demo
 			string connecitonString = ConfigurationManager.ConnectionStrings[ "dev" ].ConnectionString;
 			IUnityContainer container = new UnityContainer();
 			var webApplicationAssembly = Assembly.GetExecutingAssembly();
-			Bootstrapper.Bootstrap( container, webApplicationAssembly, webApplicationAssembly, connecitonString, this, webApplicationAssembly, webApplicationAssembly, webApplicationAssembly );
+			Bootstrapper.Bootstrap( container, webApplicationAssembly, webApplicationAssembly, connecitonString, webApplicationAssembly, webApplicationAssembly, webApplicationAssembly );
 			FluentValidationModelValidatorProvider.Configure();
 		}
 	}

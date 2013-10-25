@@ -1,5 +1,4 @@
 ﻿using System.Reflection;
-using System.Web;
 using System.Web.Mvc;
 using Microsoft.Practices.Unity;
 using PseudoCQRS.Bootstrap.DataAccess;
@@ -14,7 +13,6 @@ namespace PseudoCQRS.Bootstrap
 			Assembly autoMapperProfilesAssembly,
 			Assembly viewModelProvidersAssembly,
 			string connectionString,
-			HttpApplication application,
 			Assembly entitiesAssembly,
 			Assembly fluentMappingsAssembly,
 			Assembly mappingsOverridesAssembly )

@@ -69,19 +69,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AutoMapperInitializer.cs" />
-    <Compile Include="DataAccess\BaseEntity.cs" />
+    <None Include="DataAccess\BaseEntity.cs.pp" />
     <Compile Include="Bootstrapper.cs" />
+    <Compile Include="DataAccess\BaseEntity.cs" />
     <Compile Include="DataAccess\DbSessionManager.cs" />
     <Compile Include="DataAccess\FluentNHibernateMappingsInitializer.cs" />
     <Compile Include="DataAccess\HybridWebSessionStorage.cs" />
-    <Compile Include="EventSubscriberAssembliesProvider.cs" />
+    <None Include="EventSubscriberAssembliesProvider.cs.pp" />
     <Compile Include="DataAccess\FluentSessionFactory.cs" />
-    <Compile Include="DataAccess\IRepository.cs" />
+    <None Include="DataAccess\IRepository.cs.pp" />
     <Compile Include="DataAccess\ISessionStorage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DataAccess\Repository.cs" />
+    <None Include="DataAccess\Repository.cs.pp" />
     <Compile Include="DataAccess\SimpleSessionStorage.cs" />
     <Compile Include="UnityControllerFactory.cs" />
+    <None Include="UnityRegistrar.cs.pp" />
     <Compile Include="UnityRegistrar.cs" />
     <Compile Include="ViewModelToCommandMappingEngine.cs" />
   </ItemGroup>

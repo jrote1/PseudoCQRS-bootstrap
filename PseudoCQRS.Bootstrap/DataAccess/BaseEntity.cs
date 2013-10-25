@@ -1,6 +1,11 @@
-﻿namespace PseudoCQRS.Bootstrap.DataAccess
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace PseudoCQRS.Bootstrap.DataAccess
 {
-	public abstract class BaseEntity
+	internal abstract class BaseEntity
 	{
 		public virtual int Id { get; protected set; }
 	}

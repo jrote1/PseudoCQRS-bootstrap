@@ -7,8 +7,6 @@ namespace PseudoCQRS.Bootstrap
 		public TTo Map<TFrom, TTo>( TFrom viewModel )
 		{
 			return AutoMapper.Mapper.Map<TFrom, TTo>( viewModel );
-		}
-	
-	
+		}	
 	}
 }
