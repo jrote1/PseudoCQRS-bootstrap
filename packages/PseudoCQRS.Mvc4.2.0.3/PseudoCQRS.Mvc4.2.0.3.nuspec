@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>PseudoCQRS.Mvc4</id>
+    <version>2.0.3</version>
+    <title>Pseudo CQRS</title>
+    <authors>Liquid Thinking</authors>
+    <owners>Liquid Thinking</owners>
+    <projectUrl>https://github.com/LiquidThinking/PseudoCQRS</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>CQRS Framework</description>
+    <releaseNotes>1. Renamed some misspelled names. 
+2. Checkers will return CheckResult instead of CommandResult
+3. Renamed mapper interface to IViewModelToCommandMapper
+
+and some minor changes.</releaseNotes>
+    <dependencies>
+      <dependency id="CommonServiceLocator" version="1.0" />
+    </dependencies>
+  </metadata>
+</package>
