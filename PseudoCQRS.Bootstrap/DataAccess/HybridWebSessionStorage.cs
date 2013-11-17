@@ -6,7 +6,7 @@ using NHibernate;
 
 namespace PseudoCQRS.Bootstrap.DataAccess
 {
-	public class HybridWebSessionStorage : ISessionStorage
+	internal class HybridWebSessionStorage : ISessionStorage
 	{
 		static ThreadLocal<SimpleSessionStorage> _threadLocalSessionStorage;
 

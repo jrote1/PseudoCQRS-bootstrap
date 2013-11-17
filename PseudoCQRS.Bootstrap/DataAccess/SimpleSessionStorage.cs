@@ -3,7 +3,7 @@ using NHibernate;
 
 namespace PseudoCQRS.Bootstrap.DataAccess
 {
-	public class SimpleSessionStorage : ISessionStorage
+	internal class SimpleSessionStorage : ISessionStorage
 	{
 		private readonly Dictionary<string, ISession> storage = new Dictionary<string, ISession>();
 

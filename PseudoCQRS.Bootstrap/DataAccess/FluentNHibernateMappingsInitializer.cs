@@ -12,7 +12,7 @@ using NHibernate.Cfg;
 
 namespace PseudoCQRS.Bootstrap.DataAccess
 {
-	public static class FluentNHibernateMappingsInitializer
+	internal static class FluentNHibernateMappingsInitializer
 	{
 		public static Configuration BuildConfiguration( string connectionString, bool showSql, Assembly entitiesAssembly, Assembly fluentMappingsAssembly, Assembly mappingsOverridesAssembly )
 		{
@@ -27,18 +27,18 @@ namespace PseudoCQRS.Bootstrap.DataAccess
 						   .Mappings( x =>
 						   {
 							   x.FluentMappings.AddFromAssembly( fluentMappingsAssembly );
-							   x.AutoMappings.Add( GetAutoMappingSettings(entitiesAssembly, mappingsOverridesAssembly) );
+							   x.AutoMappings.Add( GetAutoMappingSettings( entitiesAssembly, mappingsOverridesAssembly ) );
 						   } )
 						   .BuildConfiguration();
-			
+
 		}
 
 		private static AutoPersistenceModel GetAutoMappingSettings( Assembly entitiesAssembly, Assembly mappingsOverridesAssembly )
 		{
 			var persistenceModel = new AutoPersistenceModel();
-			persistenceModel.AddEntityAssembly( entitiesAssembly ).Where( x => x.IsSubclassOf( typeof ( BaseEntity ) ) );
+			persistenceModel.AddEntityAssembly( entitiesAssembly ).Where( x => x.BaseType.Name == "BaseEntity" );
 			persistenceModel.UseOverridesFromAssembly( mappingsOverridesAssembly );
-			persistenceModel.Conventions.Add(				
+			persistenceModel.Conventions.Add(
 				PrimaryKey.Name.Is( x => "Id" ),
 				ConventionBuilder.Id.Always( x => x.GeneratedBy.Identity() ),
 				ConventionBuilder.Property.Always( x => x.Not.Nullable() ),

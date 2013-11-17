@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
 		<id>PseudoCQRS.Bootstrap</id>
-		<version>$version$</version>
+		<version>1.0.0</version>
 		<title>Pseudo CQRS Bootstrap</title>
 		<authors>LiquidThinking</authors>
 		<owners />
@@ -15,16 +15,17 @@
 			<dependency id="CommonServiceLocator" version="1.0" />
 			<dependency id="FluentNHibernate" version="1.3.0.733" />
 			<dependency id="Unity" version="2.1.505.2" />
-		</dependencies>
+      <dependency id="FluentValidation" version="5.0.0.1" />
+      <dependency id="FluentValidation.MVC4" version="5.0.0.1" />
+    </dependencies>
 	</metadata>
 	<files>
-		<file src="PseudoCQRS.Bootstrap\AutoMapperInitializer.cs.pp" target="content\Bootstrap\AutoMapperInitializer.cs.pp" />
-		<file src="PseudoCQRS.Bootstrap\Bootstrapper.cs.pp" target="content\Bootstrap\Bootstrapper.cs.pp" />
-		<file src="PseudoCQRS.Bootstrap\DbSessionManager.cs.pp" target="content\Bootstrap\DbSessionManager.cs.pp" />
-		<file src="PseudoCQRS.Bootstrap\EventSubscriberAssembliesProvider.cs.pp" target="content\Bootstrap\EventSubscriberAssembliesProvider.cs.pp" />
-		<file src="PseudoCQRS.Bootstrap\UnityControllerFactory.cs.pp" target="content\Bootstrap\UnityControllerFactory.cs.pp" />
+    <file src="PseudoCQRS.Bootstrap\DataAccess\BaseEntity.cs.pp" target="content\Bootstrap\DataAccess\BaseEntity.cs.pp" />
+    <file src="PseudoCQRS.Bootstrap\DataAccess\IRepository.cs.pp" target="content\Bootstrap\DataAccess\IRepository.cs.pp" />
+    <file src="PseudoCQRS.Bootstrap\DataAccess\Repository.cs.pp" target="content\Bootstrap\DataAccess\Repository.cs.pp" />
+    <file src="PseudoCQRS.Bootstrap\Bootstrapper.cs.pp" target="content\Bootstrap\Bootstrapper.cs.pp" />
+    <file src="PseudoCQRS.Bootstrap\EventSubscriberAssembliesProvider.cs.pp" target="content\Bootstrap\EventSubscriberAssembliesProvider.cs.pp" />
 		<file src="PseudoCQRS.Bootstrap\UnityRegistrar.cs.pp" target="content\Bootstrap\UnityRegistrar.cs.pp" />
-		<file src="PseudoCQRS.Bootstrap\ViewModelToCommandMappingEngine.cs.pp" target="content\Bootstrap\ViewModelToCommandMappingEngine.cs.pp" />
-		<file src="PseudoCQRS.Bootstrap\bin\Release\PseudoCQRS.Bootstrap.dll" target="lib\net40\PseudoCQRS.dll" />
+		<file src="PseudoCQRS.Bootstrap\bin\Release\PseudoCQRS.Bootstrap.dll" target="lib\net40\PseudoCQRS.Bootstrap.dll" />
 	</files>
 </package>

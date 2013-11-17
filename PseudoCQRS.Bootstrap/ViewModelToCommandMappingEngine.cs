@@ -2,7 +2,7 @@
 
 namespace PseudoCQRS.Bootstrap
 {
-	public class ViewModelToCommandMappingEngine: IViewModelToCommandMappingEngine
+	internal class ViewModelToCommandMappingEngine: IViewModelToCommandMappingEngine
 	{
 		public TTo Map<TFrom, TTo>( TFrom viewModel )
 		{

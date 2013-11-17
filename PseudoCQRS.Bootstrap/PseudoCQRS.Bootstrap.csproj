@@ -69,9 +69,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AutoMapperInitializer.cs" />
+    <None Include="Bootstrapper.cs.pp" />
     <None Include="DataAccess\BaseEntity.cs.pp" />
-    <Compile Include="Bootstrapper.cs" />
-    <Compile Include="DataAccess\BaseEntity.cs" />
+    <Compile Include="PseudoCQRSBootstrapper.cs" />
     <Compile Include="DataAccess\DbSessionManager.cs" />
     <Compile Include="DataAccess\FluentNHibernateMappingsInitializer.cs" />
     <Compile Include="DataAccess\HybridWebSessionStorage.cs" />
@@ -79,12 +79,13 @@
     <Compile Include="DataAccess\FluentSessionFactory.cs" />
     <None Include="DataAccess\IRepository.cs.pp" />
     <Compile Include="DataAccess\ISessionStorage.cs" />
+    <Compile Include="UnityCQRSRegistrations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="DataAccess\Repository.cs.pp" />
     <Compile Include="DataAccess\SimpleSessionStorage.cs" />
+    <Compile Include="UnityContainerExtensionMethods.cs" />
     <Compile Include="UnityControllerFactory.cs" />
     <None Include="UnityRegistrar.cs.pp" />
-    <Compile Include="UnityRegistrar.cs" />
     <Compile Include="ViewModelToCommandMappingEngine.cs" />
   </ItemGroup>
   <ItemGroup>

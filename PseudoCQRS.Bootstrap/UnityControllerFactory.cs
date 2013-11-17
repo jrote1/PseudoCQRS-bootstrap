@@ -4,7 +4,7 @@ using Microsoft.Practices.Unity;
 
 namespace PseudoCQRS.Bootstrap
 {
-	public class UnityControllerFactory : DefaultControllerFactory
+	internal class UnityControllerFactory : DefaultControllerFactory
 	{
 		private readonly IUnityContainer _container;
 
@@ -12,7 +12,6 @@ namespace PseudoCQRS.Bootstrap
 		{
 			_container = container;
 		}
-
 
 		protected override IController GetControllerInstance( System.Web.Routing.RequestContext requestContext, Type controllerType )
 		{

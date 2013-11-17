@@ -3,7 +3,7 @@ using System.Data;
 
 namespace PseudoCQRS.Bootstrap.DataAccess
 {
-	public class DbSessionManager : IDbSessionManager
+	internal class DbSessionManager : IDbSessionManager
 	{
 		public void CloseSession()
 		{

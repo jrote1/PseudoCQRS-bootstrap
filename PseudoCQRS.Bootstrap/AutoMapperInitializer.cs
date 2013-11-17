@@ -5,7 +5,7 @@ using AutoMapper;
 
 namespace PseudoCQRS.Bootstrap
 {
-	public static class AutoMapperInitializer
+	internal static class AutoMapperInitializer
 	{
 		public static void Initialise(Assembly automapperProfilesAssembly)
 		{
