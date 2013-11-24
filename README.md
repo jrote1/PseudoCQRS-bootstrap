@@ -1,15 +1,15 @@
 PseudoCQRS-bootstrap
 ====================
 
-This is a bootstrapper for PseudoCQRS framework. If you don't know about PseudoCQRS then please visit https://github.com/LiquidThinking/PseudoCQRS to learn more about it.
+A bootstrap for PseudoCQRS. PseudoCQRS is a CQRS based framework to create web applications. Please visit https://github.com/LiquidThinking/PseudoCQRS to learn more about it.
 
-In order to use this, first create a asp.net web project and then in Package Manager Console type:
+ Create a new asp.net web project and install this as a package by typing the following in your package manager console.
 
 Install-Package PseudoCQRS.Bootstrap
 
-This will install Bootstrap project including some source files which will be copied in your Project in "Bootstrap" folder.
+This will install everything which should need and plus some csharp code files will be copied into a new folder "Bootstrap"
 
-Then open your Global.asax.cs file and add this line
+Open your Global.asax.cs file and add this line
 
 PseudoCQRS.Bootstrap.Bootstrapper.Initialize();
 
